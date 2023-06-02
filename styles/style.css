@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    letter-spacing: 2px;
+    background: linear-gradient(133deg, #00d7c3 30%, #040403 40%);
+    background-size: 400% 400%;
+    animation: background-animation 20s ease infinite;
+    color: rgb(241, 235, 235);
+}
+
+i {
+    color: rgb(241, 235, 235);
+}
+
+@keyframes background-animation {
+    0% {
+        background-position: 0% 54%;
+    }
+
+    50% {
+        background-position: 100% 47%;
+    }
+
+    100% {
+        background-position: 0% 54%;
+    }
+}
+
+main {
+    display: flex;
+    margin: 20.019999999999996vmin;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.responsive-description {
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+    main {
+    display: block;
+    text-align: center;
+    }       
+    
+    .normal-description {
+        display: none;
+    }
+
+    .responsive-description {
+        display: block;
+    }
+
+    aside {
+        margin: 2em;
+    }
+}
+
+h1 {
+    font-size: clamp(30px, 6vw, 80px);
+}
+
+h2,
+h3 {
+    margin: 20px 0;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    min-width: 20vw;
+    border-radius: 20px;
+}
+
+input {
+    font-family: 'Merriweather', serif;
+    color: rgba(0, 0, 0, 0.9);
+    height: 43px;
+    text-align: center;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 200;
+    width: 313px;
+    margin-top: 30px;
+    border-radius: 20px 0 0 20px;
+}
+
+input:focus {
+    box-shadow: 0 0 10px 0 #00d7c3, 0 0 20px 2px #00d7c3;
+    transition: all .5s ease;
+}
+
+label {
+    display: flex;
+    align-items: flex-end;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icons {
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+.fa-github {
+    border-radius: 60px;
+}
+
+.fa-linkedin {
+    border-radius: 5px;
+}
+
+.icons i:hover,
+button:hover {
+    color: #040403;
+    background-color: #00d7c3;
+    box-shadow: 0 0 10px 0 #00d7c3, 0 0 20px 2px #00d7c3;
+    transition: all .5s ease;
+}
+
+button {
+    cursor: pointer;
+    height: 45.2px;
+    border: none;
+    background-color: #040403;
+    border-radius: 0 20px 20px 0;
+    width: 33px;
+}
+
+
+
+button i {
+    font-size: 1.2rem;
+    
+}

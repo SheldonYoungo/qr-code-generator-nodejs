@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>QR CODE GENERATOR</h1>
+
+            <div class="normal-description">
+                <h2>
+                    Just type the URL you desire and see the magic!!!
+                </h2>
+    
+                <h3>By Sheldon Youngo. 2023</h3>
+                
+                <div class="icons">
+                    <a href="http://https://github.com/SheldonYoungo?tab=repositories" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/sheldon-youngo/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        
+        <aside>
+            <img src="<%= qrSource %>" alt="">
+
+            <label>
+                <input type="url" placeholder="Insert your URL" name="url" id="">
+
+                <button><i class="fa-solid fa-arrow-right"></i></button>
+            </label>
+        </aside>
+        
+        <div class="responsive-description">
+            <h2>
+                Just type the URL you desire and see the magic!!!
+            </h2>
+
+            <h3>By Sheldon Youngo. 2023</h3>
+            
+            <div class="icons">
+                <a href="http://https://github.com/SheldonYoungo?tab=repositories" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/sheldon-youngo/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
