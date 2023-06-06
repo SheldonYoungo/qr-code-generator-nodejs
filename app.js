@@ -13,7 +13,7 @@ app.use(express.static('public'))
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.render('index', {qrSource: '', messageDisplay: 'none'});
+    res.render('index', {qrSource: '/public/qr_codes/github.com_qr_code.png', messageDisplay: 'none'});
 })
 
 app.post('/', (req, res) => {
